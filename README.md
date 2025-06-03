@@ -1,15 +1,15 @@
-# GoogleImageCrawler を用いた画像収集スクリプト
+# Image Collection Script Using GoogleImageCrawler
 
-このスクリプトは、Python ライブラリ `icrawler` の `GoogleImageCrawler` を使用して、Google画像検索から特定のキーワードに基づいた画像を自動でダウンロードします。
+This script uses the `GoogleImageCrawler` from the Python library `icrawler` to automatically download images from Google Images based on specified keywords.
 
 ---
 
-## 🔧 必要な環境
+## 🔧 Requirements
 
-* Python 3.6 以降
-* `icrawler` パッケージ
+* Python 3.6 or higher
+* `icrawler` package
 
-### インストール手順
+### Installation
 
 ```bash
 pip install icrawler
@@ -17,19 +17,19 @@ pip install icrawler
 
 ---
 
-## 🚀 使用方法
+## 🚀 Usage
 
-1. コマンドラインで実行：
+1. Run from the command line:
 
 ```bash
-python scripts/crawler.py --input_word "子犬" --output_dir dogs --max_num 50
+python scripts/crawler.py --input_word "puppy" --output_dir dogs --max_num 50
 ```
 
-2. 実行後、指定した `dogs/` フォルダに「子犬」の画像が最大50枚保存されます。
+2. After execution, up to 50 images of "puppy" will be saved in the specified `dogs/` folder.
 
 ---
 
-## 📁 出力例
+## 📁 Output Example
 
 ```
 dogs/
@@ -41,19 +41,19 @@ dogs/
 
 ---
 
-## ⚠️ 注意点
+## ⚠️ Notes
 
-* Google画像検索の仕様変更により、正常に動作しない場合があります。
-* 非営利目的での使用を推奨します。著作権・利用規約にご注意ください。
-
----
-
-## 📚 参考
-
-* [icrawler ドキュメント](https://icrawler.readthedocs.io/en/latest/)
+* The script may not work properly if Google Images changes its specifications.
+* Recommended for non-commercial use. Please be aware of copyright and usage policies.
 
 ---
 
-## 🧑‍💻 ライセンス
+## 📚 Reference
 
-このスクリプトは[MITライセンス](./LICENSE)で提供されます。
+* [icrawler Documentation](https://icrawler.readthedocs.io/en/latest/)
+
+---
+
+## 🧑‍💻 License
+
+This script is provided under the [MIT License](./LICENSE).
